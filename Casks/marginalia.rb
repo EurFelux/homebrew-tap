@@ -1,10 +1,10 @@
 cask "marginalia" do
-  version "0.3.0"
-  sha256 "d7082999fc5228d85da7f9f2c2600538fa95f70651d8d57ab3fe40a07de8f236"
+  version "0.4.0"
+  sha256 "b88901f63b6ad30766e294000ef1ccf7980d5079d9342015c295369c9c09c3c0"
 
   url "https://github.com/EurFelux/marginalia/releases/download/v#{version}/marginalia-#{version}-arm64.dmg"
   name "Marginalia"
-  desc "AI-native ePub reader — select text and ask, with transparent context"
+  desc "AI-native ePub and PDF reader — select text and ask, with transparent context"
   homepage "https://github.com/EurFelux/marginalia"
 
   depends_on arch: :arm64
