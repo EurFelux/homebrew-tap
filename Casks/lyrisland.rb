@@ -4,17 +4,15 @@ cask "lyrisland" do
 
   url "https://github.com/EurFelux/Lyrisland/releases/download/v#{version}/Lyrisland-#{version}.zip"
   name "Lyrisland"
-  desc "Menu bar lyrics app for Spotify on macOS"
+  desc "Menu bar lyrics app for Spotify"
   homepage "https://github.com/EurFelux/Lyrisland"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Lyrisland.app"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/Lyrisland.app"],
-                   sudo: false
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-cr", "{{appdir}}/Lyrisland.app"]
   end
 
   zap trash: [
