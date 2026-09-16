@@ -1,6 +1,6 @@
 cask "lyrisland" do
-  version "0.7.1"
-  sha256 "4a06f2f5f080db56882736ea30f166ea199ea1530578b2f667aa00ccc07c0f08"
+  version "0.7.2"
+  sha256 "20034d697ad5564288da050c98794d5fdfa8915ee99db67d0ae407ba35ea6189"
 
   url "https://github.com/EurFelux/Lyrisland/releases/download/v#{version}/Lyrisland-#{version}.zip"
   name "Lyrisland"
