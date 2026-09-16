@@ -1,6 +1,6 @@
 cask "marginalia" do
-  version "0.18.4"
-  sha256 "636b499ab2fb343a30a5da232f5a26701d17e0cc68c10aba17d0d8d3ca2ce743"
+  version "0.18.5"
+  sha256 "c978176cca8f71b804b80991a253295e9fffbe027dc1dbd60696619378307387"
 
   url "https://github.com/EurFelux/marginalia/releases/download/v#{version}/marginalia-#{version}-arm64.dmg"
   name "Marginalia"
