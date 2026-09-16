@@ -8,13 +8,12 @@ cask "marginalia" do
   homepage "https://github.com/EurFelux/marginalia"
 
   depends_on arch: :arm64
+  depends_on :macos
 
   app "marginalia.app"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/marginalia.app"],
-                   sudo: false
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-cr", "{{appdir}}/marginalia.app"]
   end
 
   zap trash: [
